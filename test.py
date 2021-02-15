@@ -60,9 +60,9 @@ def getYGB():
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('--disable-dev-shm-usage')
-    driver = webdriver.Chrome(chrome_options=chrome_options)
+    driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=chrome_options)
 
-    driver.get('https://www.douyu.com/9999')
+    driver.get('https://www.douyu.com/88885')
     for i in cookies.keys():
         cookie1 = {
             'domain': '.douyu.com',
