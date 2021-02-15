@@ -109,8 +109,14 @@ def mainApi(sum,idList,nubList):
             time.sleep(1)
 
 
+def main(cookies,sum,idList,nubList):	
+    init(cookie=cookies)	
+    getYGB()	
+    mainApi(sum,idList,nubList)	
+
+
 if __name__ == "__main__":
-    if cookie:
+    if douyuCookie:
         print("start")
         main(cookies=douyuCookie,sum=douyuSum,idList=douyuList,nubList=douyuNum)
         print("end")
